@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  	<script src="js/script.js" defer></script>
+  	<script src="js/template.js"></script>
+  	<script src="js/source.js"></script>
+</head>
+<body>
+	
+	<div class="wrapper">
+			<img src="img/1.jpg" alt="Planet">
+			<img src="img/2.jpg" alt="Planet">
+			<img src="img/3.jpg" alt="Planet">
+			<img src="img/4.jpg" alt="Planet">
+			<img src="img/5.jpg" alt="Planet">
+			<img src="img/6.jpg" alt="Planet">
+			<img src="img/7.jpg" alt="Planet">
+			<img src="img/8.jpg" alt="Planet">
+			<img src="img/9.jpg" alt="Planet">
+			<div class="layer"></div>
+	</div>
+
+	<script type="text/template" id="businessCard">
+		<div class="bCard">
+			<div class="name">
+				<h1><%= myName %></h1>
+				<img src="<%= image %>" alt="My photo" id="picture">
+				<p><%= occupation %></p>
+			</div>
+
+			<div class="motivation">
+				<h4><%= motivations %></h4>
+				<ul>
+					<% for (var i = 0; i < arguments.length; i++) { %>
+						<li><%= arguments[i] %></li>
+					<%	} %>
+				</ul>
+			</div>
+			
+			<div class="contacts">
+				<p><%= phone %></p>
+				<p><%= phoneNumber %></p>
+				<p><%= fb %></p>
+				<p><%= fbLink %></p>
+
+			</div>
+			
+			<div class="feedback">
+				<p><%= myFeedback %></p>
+				<p><%= myFeedbackAct %></p>
+
+			</div>
+
+		</div>
+	</script>
+
+</body>
+</html>

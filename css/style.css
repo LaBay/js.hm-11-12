@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #efefef;
+}
+
+	/*MY CAROUSEL*/
+
+.wrapper{
+	position: relative;
+	margin: 50px 0 50px 390px;
+	width: 230px;
+	height: 140px;
+	overflow: hidden;
+	border: 20px solid lightgray;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px gray;
+}
+
+.wrapper img{
+	position: absolute;
+	transition: 1s;
+}
+
+.layer{
+	position: absolute;
+	height: 140px;
+	width: 230px;
+	background-color: black;
+	line-height: 140px;
+	z-index: -1;
+}
+
+	/* MY TEMPLATE */
+
+.bCard{
+	width: 512px;
+	height: 800px;
+	margin: 100px 0 100px 250px;
+	padding: 49px;
+	line-height: 30px;
+	box-shadow: 0px 0px 5px black;
+	background-color: #fff;
+}
+
+.bCard h1{
+	text-align: center;
+}
+
+.name img{
+	margin: 10px 0px 20px 175px;
+	height: 160px;
+	width: auto;
+}
+
+.name{
+	height: 270px;
+	border-bottom: 1px solid black;
+}
+
+.name p{
+	text-indent: 20px;
+}
+
+.motivation{
+	height: 170px;
+	border-bottom: 1px solid black;
+	padding: 30px 0 20px 20px;
+}
+
+.motivation ul{
+	margin: 10px 0 0 20px;
+}
+
+.contacts{
+	height: 165px;
+	border-bottom: 1px solid black;
+	padding: 30px 0 20px 20px;
+}
+
+.feedback{
+	padding: 30px 0 20px 20px;
+}
